@@ -253,10 +253,60 @@ h6 {font-size: 16px;}
     right: -5px;
 }
 
+#skills{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
+}
+
 .about-wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+
+.social-links{
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    margin-left: 2em;
+}
+
+/* SOCIAL ICONS  ENDS*/
+#social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#github-icon {
+    /* position: fixed; */
+    z-index: 3;
+    /* top: 25vh;
+    right: 5px; */
+    font-size: 4em;
+    color: darkslategray;
+  }
+  
+  #linkedin-icon {
+    /* position: fixed; */
+    z-index: 3;
+    /* top: 35vh;
+    right: 5px; */
+    font-size: 4em;
+    color: rgb(68, 87, 144);
+  }
+  
+  #hackerrank-icon {
+    /* position: fixed; */
+    z-index: 3;
+    /* top: 45vh;
+    right: 5px; */
+    font-size: 4em;
+    color: #1fad30;
+  }
+/* SOCIAL ICONS  ENDS*/
 
 @media screen and (max-width: 1200px){
     .main-container{
