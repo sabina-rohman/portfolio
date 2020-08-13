@@ -10,11 +10,17 @@
     --themeDotBorder: #24292e;
     --previewBg: rgb(251, 249, 243, 0.8);
     --previewShadow: #f0ead6;
+
+    --buttonnColor: black; 
 }
 
 html, body{
    padding: 0; 
    margin: 0;
+}
+
+body *{
+    transition: 0.3s;
 }
 
 h1, h2, h3, h4, h5, h6, strong{
@@ -95,6 +101,10 @@ h6 {font-size: 16px;}
     justify-content: space-between;
     align-items: center;
     background-color: var(--mainColor);
+}
+
+#navigation a{
+    color: var(--mainText);
 }
 
 .dots-wrapper{
@@ -191,7 +201,7 @@ h6 {font-size: 16px;}
 }
 
 #purple-mode{
-    background-color: #7E4C74;
+    background-color: #d790c9;
 }
 
 #settings-note{
@@ -264,15 +274,24 @@ h6 {font-size: 16px;}
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding-top: 50px;
     padding-bottom: 50px;
+    line-height: 2em;
+    gap:100px;
 }
 
 .social-links{
-    display: flex;
-    justify-content: end;
+    /* display: flex;
+    margin-left: 2em;  */
+    display: grid;
     align-content: center;
-    margin-left: 2em;
+    text-align: center;
 }
 
+#expe{
+    background-color: var(--previewShadow);
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 2em;;
+}
 /* SOCIAL ICONS  ENDS*/
 #social-icons {
     display: flex;
@@ -288,6 +307,7 @@ h6 {font-size: 16px;}
     font-size: 4em;
     color: darkslategray;
   }
+
   
   #linkedin-icon {
     /* position: fixed; */
@@ -307,6 +327,82 @@ h6 {font-size: 16px;}
     color: #1fad30;
   }
 /* SOCIAL ICONS  ENDS*/
+
+.post-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.post{
+    border: 1px solid var(--borderColor);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+
+.thumbnail{
+    width: 100%;
+    height: 180px;
+    display: block;
+    object-fit: cover;
+}
+
+.post-preview{
+    background-color: #fff;
+    padding: 15px;
+}
+
+.post-title{
+    color: black;
+    margin: 0;
+}
+
+.post-intro{
+    color: #4b5156;
+    font-size: 16px;
+}
+
+#contact-form{
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid var(--borderColor);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    margin-bottom: 50px;
+}
+
+#contact-form label{
+    line-height: 2.7em;
+}
+
+#contact-form textarea{
+    min-height: 100px;
+    font-size: 14px;
+}
+
+.input-field{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    border: none;
+}
+
+#submit-btn{
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    background-color: var(--buttonnColor);
+    border: none;
+}
 
 @media screen and (max-width: 1200px){
     .main-container{
