@@ -350,6 +350,7 @@ h6 {font-size: 16px;}
 .post-preview{
     background-color: #fff;
     padding: 15px;
+    height: 230px;
 }
 
 .post-title{
@@ -391,7 +392,7 @@ h6 {font-size: 16px;}
     border: none;
 }
 
-#submit-btn{
+.btn{
     margin-top: 10px;
     width: 100%;
     padding-top: 10px;
@@ -399,6 +400,15 @@ h6 {font-size: 16px;}
     color: #fff;
     background-color: var(--buttonnColor);
     border: none;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.post-btn{
+    margin-right: 6px;
 }
 
 @media screen and (max-width: 1200px){
