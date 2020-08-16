@@ -300,29 +300,22 @@ h6 {font-size: 16px;}
 }
 
 #github-icon {
-    /* position: fixed; */
     z-index: 3;
-    /* top: 25vh;
-    right: 5px; */
+    right: 5px; 
     font-size: 4em;
     color: darkslategray;
   }
 
   
   #linkedin-icon {
-    /* position: fixed; */
     z-index: 3;
-    /* top: 35vh;
-    right: 5px; */
+    right: 5px; 
     font-size: 4em;
     color: rgb(68, 87, 144);
   }
   
   #hackerrank-icon {
-    /* position: fixed; */
     z-index: 3;
-    /* top: 45vh;
-    right: 5px; */
     font-size: 4em;
     color: #1fad30;
   }
@@ -345,7 +338,8 @@ h6 {font-size: 16px;}
 
 .thumbnail{
     width: 100%;
-    height: 180px;
+    /* changed it */
+    height: 250px;
     display: block;
     object-fit: cover;
 }
