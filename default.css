@@ -393,6 +393,7 @@ h6 {font-size: 16px;}
     color: #fff;
     background-color: var(--buttonnColor);
     border: none;
+    cursor: pointer;
 }
 
 .buttons{
