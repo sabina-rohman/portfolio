@@ -78,9 +78,6 @@ h6 {font-size: 16px;}
 
 .intro-wrapper{
     background-color: var(--secondaryColor);
-    border: 1px solid var(--borderColor);
-    border-radius:5px 5px 0 0; 
-
     -webkit-box-shadow: 14px 9px 21px 0px rgba(0,0,0,0.52);
     -moz-box-shadow: 14px 9px 21px 0px rgba(0,0,0,0.52);
     box-shadow: 14px 9px 21px 0px rgba(0,0,0,0.52);
@@ -95,7 +92,7 @@ h6 {font-size: 16px;}
 }
 
 .nav-wrapper{
-    border-radius:5px 5px 0 0; 
+    /* border-radius:5px 5px 0 0;  */
     grid-area: nav-wrapper;
     border-bottom: 1px solid var(--borderColor);
     display: flex;
@@ -121,7 +118,7 @@ h6 {font-size: 16px;}
 #navigation li{
     display: inline-block;
     margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 #dot-1{
@@ -223,6 +220,8 @@ h6 {font-size: 16px;}
     width: 300px;
     height: 180px;
     padding-left: 30px;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
     padding-top: 30px;
     background-color: var(--previewShadow);
 }
@@ -233,6 +232,9 @@ h6 {font-size: 16px;}
     background-color: var(--previewBg);
     padding: 50px;
     position: relative;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    text-align-last: center;
 }
 
 .corner{
@@ -249,15 +251,6 @@ h6 {font-size: 16px;}
     left: -5px;
 }
 
-#corner-tr{
-    top: -5px;
-    right: -5px;
-}
-
-#corner-bl{
-    bottom: -5px;
-    left: -5px;
-}
 
 #corner-br{
     bottom: -5px;
@@ -277,15 +270,13 @@ h6 {font-size: 16px;}
     padding-bottom: 50px;
     line-height: 2em;
     gap:100px;
+    text-align: center;
 }
 
 .social-links{
-    /* display: flex;
-    margin-left: 2em;  */
     display: grid;
     align-content: center;
     text-align: center;
-    /* padding: 3em; */
 }
 
 #expe{
@@ -294,6 +285,7 @@ h6 {font-size: 16px;}
     padding-right: 1em;
     line-height: 2em;;
 }
+
 /* SOCIAL ICONS  ENDS*/
 #social-icons {
     display: flex;
@@ -434,6 +426,6 @@ h6 {font-size: 16px;}
 
     #preview{
         width: 80%;
-        height: 80%
+        height: 70%;
     }
 }

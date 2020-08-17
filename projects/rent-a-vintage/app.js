@@ -1,5 +1,6 @@
 // Get the button
 var mybutton = document.getElementById("myBtn");
+var transitionPic = document.getElementById("transition-pic");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -11,14 +12,31 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+// button animation ends here
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// ------------------------------------------------
 
 
+// Transition page starts here
+function bgChanger(){
+  if(this.scrollY > this.innerHeight / 2){
+    document.body.classList.add('bg-active');
+  }else {
+    document.body.classList.remove('bg-active');
+  }
+}
+
+window.addEventListener('scroll', bgChanger);
+
+// Transition page ends here
+
+// ===============================================================================
+// The dream vintage animation
 const hero = document.querySelector('.hero');
 const slider = document.querySelector('.slider');
 const logo = document.querySelector('#logo');
@@ -58,3 +76,5 @@ tl.fromTo(
     {opacity: 1, x: 0},
     "-=0.5"
 )
+
+// =======================================================================================

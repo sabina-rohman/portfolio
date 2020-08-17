@@ -7,7 +7,8 @@
 }
 
 body{
-  font-family: 'Lobster', cursive;;
+  font-family: 'Roboto', sans-serif;
+  background-color: lightgray;
 }
 
 #myBtn {
@@ -27,10 +28,13 @@ body{
     transition: 0.3s ease;
   }
   
-  #myBtn:hover {
-    background-color: #555;
-  }
+#myBtn:hover {
+  background-color: #555;
+}
 
+#contact {
+  color: white;
+}
 
 .slider {
     position: absolute;
@@ -111,7 +115,9 @@ span {
     font-size:1.5rem;
 }
 
-
+#form {
+  max-width: 800px;
+}
 
 
 #car-section img{
@@ -150,67 +156,88 @@ span {
     height: 100%;
   }
 
-
-  # garden-section img{
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
- }
- 
- #garden-section .overlay {
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   background-color: #EDEAE5;
-   opacity: 0.7;
-   overflow: hidden;
-   width: 100%;
-   height: 0;
-   transition: .7s ease;
- }
- 
- #garden-section .text {
-   color: black;
-   opacity: 1.0;
-   font-size: 20px;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   -webkit-transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
-   transform: translate(-50%, -50%);
-   text-align: center;
- }
- 
- #garden-section .container-img:hover .overlay {
-     height: 100%;
-   }
+em {
+  font-size: 2em;
+}
 
 .punch-line{
-    font-family:
+  font-weight: bold;
+  font-size: 10px;
+}
+/* Page transition starts */
+
+#transition {
+  background-color: lightgray;
+  height:100vh;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#transition-pic{
+  /* background-color: #CFFFE5; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#transition-pic img{
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+} 
+
+.page2{
+  margin-top: 50px;
+  text-align: center;
+  width: 70%;
+}
+
+.page2 h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+
+
+.bg-active{
+  background-color: white;
+}
+
+.intro-text h1{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 22px;
 }
   
+/* Page transition ends */
 
-  @media (max-width:1100px){
-    #header h1 {
-      font-size:3rem;
-    }
-    #header span {
-      font-size:1.5rem;
-    }
-  
-    #presentation p {
-      font-size: 1rem;
-    }
-  
-    p {
-      font-size: 0.85rem;
-    }
-  
-    .lead {
-      font-size: 1rem;
-    }
+@media (max-width:1100px){
+  #header h1 {
+    font-size:3rem;
+  }
+  #header span {
+    font-size:1.5rem;
+  }
+
+  #presentation p {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
 }  
 
 @media (max-width:992){
